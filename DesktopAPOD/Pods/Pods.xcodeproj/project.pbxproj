@@ -10,22 +10,22 @@
 		08700CBB713B443AFA394EFD6B74E402 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EF471DEF73B1BAA165B447BDECA85 /* libxmlHTMLNode.swift */; };
 		1BC3D304D6D2CD36AD7E4DF20E3ACDBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
 		322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 349C621B06592780F4D407EF354815EF /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		348E9F18C207E05D761EA61EE083F746 /* Pods-APODDeskotopImageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A35A5AEE07CFD3BDD3EEB0401E12A823 /* Pods-APODDeskotopImageTests-dummy.m */; };
 		3DB400D8B8AADDF43E1439E3441E814B /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E773DB4BA0F7ED0C94EAFA8C0ED2DAD8 /* Kanna-dummy.m */; };
 		436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C01807B7A740FB509C0A5BC9E2FB597 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4860771C3ADBC73DD0BE16787A33FADC /* Pods-APODDeskotopImageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB77959EBDD6136A1306C9CF46670D48 /* Pods-APODDeskotopImageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52D053111A5B54172A1DCAF49A3125F3 /* Pods-APODDeskotopImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFA8DA199938232D7F0567FAB2501FE /* Pods-APODDeskotopImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59861A0F47855EF333396726029FC1B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
 		634F01C0D06986FD15F647234ADA7CBC /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6D38A36580A05D39E99551CC6752E /* Kanna.swift */; };
-		645D3CCE5C949EA42D0EDF9DA0E65C23 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		770CF1C4D71AC0E009A38FCEC5CBE311 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
 		781A4D12CC4A83EA4705C6029254B012 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E040D43135A5A6C37004F1BBF4C49942 /* libxmlHTMLDocument.swift */; };
-		904BD41F91DF25FF821C2175E70D1096 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
 		AF863C36D259D89189A0BDF54912C76E /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714B0F54E87FD450F287E216B164791B /* CSS.swift */; };
-		F81873B6C4DCAE4E4559BE03CDBB6F68 /* Pods-APODDeskotopImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9354E2AD080771F14AF8364AA7498957 /* Pods-APODDeskotopImage-dummy.m */; };
+		B9FBB0511C1A33311F53D63538CD7776 /* Pods-DesktopAPODTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE37D73D76298DF8D6C4F172DF4BEBB4 /* Pods-DesktopAPODTests-dummy.m */; };
+		E4D1D021848A2DCCEE1765A37B3CF59F /* Pods-DesktopAPOD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63F45F0998B262AD67DA7ABC0ACE /* Pods-DesktopAPOD-dummy.m */; };
+		E79304600D11332309BE78FC4B535E76 /* Pods-DesktopAPODTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BFF458215C10A62EA9D7AEEA21F577 /* Pods-DesktopAPODTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB83CD0E74A643ECDA5D73B71A977870 /* Pods-DesktopAPOD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D757A70A3F560CD4B45A2E39980B15 /* Pods-DesktopAPOD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD87F8764674EFAAF3AABCA2552E5127 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED7164FE687D5C00EFF2F075A8A22F5 /* libxmlParserOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8AA01A055B34657F4D1AB10BC2EEB20C /* PBXContainerItemProxy */ = {
+		606CBBB747A52E24B0119415F22842B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -35,46 +35,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0916C3DDCE7B936122058054B3F3C2E8 /* Pods-APODDeskotopImageTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APODDeskotopImageTests-resources.sh"; sourceTree = "<group>"; };
-		0CFA8DA199938232D7F0567FAB2501FE /* Pods-APODDeskotopImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APODDeskotopImage-umbrella.h"; sourceTree = "<group>"; };
-		13273BFC8C3E9F871E6046F6DF715C42 /* Pods-APODDeskotopImage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APODDeskotopImage-acknowledgements.plist"; sourceTree = "<group>"; };
-		1C2EA821AA8C4A2FAF51E3F3EA0C04FD /* Pods-APODDeskotopImageTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APODDeskotopImageTests-frameworks.sh"; sourceTree = "<group>"; };
-		1E797CB4F6E261CE0E48C261BF4B4935 /* Pods-APODDeskotopImageTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APODDeskotopImageTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		04AFFF8CA46BDFFADF3069AD85BB342E /* Pods_DesktopAPOD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DesktopAPOD.framework; path = "Pods-DesktopAPOD.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3377C38EAF35516F2BE65C42C54381 /* Pods-DesktopAPOD-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesktopAPOD-frameworks.sh"; sourceTree = "<group>"; };
+		0B9C05D8B31A6A59C0D769A039788C5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE2B077E9644866DF77F56C90918FDA /* Pods-DesktopAPODTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesktopAPODTests.release.xcconfig"; sourceTree = "<group>"; };
+		1DAD86B55A577EFB577279FF3FF58660 /* Pods-DesktopAPODTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DesktopAPODTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1EC791AF0EAD4DBB17E3CF53490ACEB6 /* Pods-DesktopAPODTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesktopAPODTests-frameworks.sh"; sourceTree = "<group>"; };
 		1ED7164FE687D5C00EFF2F075A8A22F5 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
-		1F855FD675797F0AE8DC528229C48A0F /* Pods_APODDeskotopImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APODDeskotopImage.framework; path = "Pods-APODDeskotopImage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		2C01807B7A740FB509C0A5BC9E2FB597 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
-		331E31896BD1CCABA1C54E2CE33EC8EE /* Pods-APODDeskotopImage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APODDeskotopImage-acknowledgements.markdown"; sourceTree = "<group>"; };
 		349C621B06592780F4D407EF354815EF /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
-		3E958C76F934C3F3DAE5E908C71ACB1A /* Pods-APODDeskotopImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-APODDeskotopImage.modulemap"; sourceTree = "<group>"; };
-		439B2E69951CA6E88EE6DA0FCB60A452 /* Pods-APODDeskotopImage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APODDeskotopImage-frameworks.sh"; sourceTree = "<group>"; };
-		49FB73438473ADB21836BB3C54F571A4 /* Pods-APODDeskotopImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APODDeskotopImage.release.xcconfig"; sourceTree = "<group>"; };
-		5042E57A93601570D230D0F51B8FCF1B /* Pods-APODDeskotopImageTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-APODDeskotopImageTests.modulemap"; sourceTree = "<group>"; };
+		3CA731E28E0F24EE4C377DBBC694C698 /* Pods-DesktopAPOD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesktopAPOD.release.xcconfig"; sourceTree = "<group>"; };
+		4414A6791353A4285C30A9BE0582C1C8 /* Pods-DesktopAPOD-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DesktopAPOD-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EC8E7C4DD73F4A57C8D95674EE444C4 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		533EF471DEF73B1BAA165B447BDECA85 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
-		5AB64B9E605F8CEF1B7E57F57F924966 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714B0F54E87FD450F287E216B164791B /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
-		7347310D7B34A41853A4008CD96CA1C2 /* Pods-APODDeskotopImage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APODDeskotopImage-resources.sh"; sourceTree = "<group>"; };
-		77B03BB9023BEF24CD3678ADC75BEC78 /* Pods_APODDeskotopImageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_APODDeskotopImageTests.framework; path = "Pods-APODDeskotopImageTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C2BA0734AD1588E4AB528FFD45C5D1A /* Pods-APODDeskotopImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APODDeskotopImage.debug.xcconfig"; sourceTree = "<group>"; };
-		7C849148DF9761BE34DBF5D09C6E6643 /* Pods-APODDeskotopImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APODDeskotopImageTests.release.xcconfig"; sourceTree = "<group>"; };
+		74D757A70A3F560CD4B45A2E39980B15 /* Pods-DesktopAPOD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DesktopAPOD-umbrella.h"; sourceTree = "<group>"; };
+		7D52BB564CAF45804580722CB19984C2 /* Pods_DesktopAPODTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DesktopAPODTests.framework; path = "Pods-DesktopAPODTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FC2E4BDCCF2D707F0B3D78587B33ED /* Pods-DesktopAPOD-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DesktopAPOD-acknowledgements.markdown"; sourceTree = "<group>"; };
 		868E84C6C7BD431BCC2F1FCB49445351 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87A621EEBE3533C2DA2C181539859A00 /* Pods-APODDeskotopImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APODDeskotopImageTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9354E2AD080771F14AF8364AA7498957 /* Pods-APODDeskotopImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APODDeskotopImage-dummy.m"; sourceTree = "<group>"; };
+		908B952268EEABC509DFE1C456C1BA3F /* Pods-DesktopAPODTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DesktopAPODTests.modulemap"; sourceTree = "<group>"; };
+		90C900C49300EE3674697B01C322F596 /* Pods-DesktopAPOD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DesktopAPOD.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A35A5AEE07CFD3BDD3EEB0401E12A823 /* Pods-APODDeskotopImageTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APODDeskotopImageTests-dummy.m"; sourceTree = "<group>"; };
+		97085E30DD7337D136CE97708FAF80D0 /* Pods-DesktopAPOD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesktopAPOD.debug.xcconfig"; sourceTree = "<group>"; };
+		A59F9CB127846CDA67BA5DFF4A4751D9 /* Pods-DesktopAPOD-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesktopAPOD-resources.sh"; sourceTree = "<group>"; };
+		AADF9491CA016820E2D8F1E2C235D271 /* Pods-DesktopAPODTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesktopAPODTests-resources.sh"; sourceTree = "<group>"; };
 		ADA15C31DA481B7DA8ACE84EA931FE8D /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
 		ADB1B2A10CD6FD3EC3E960A4C0C06EBD /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		AE37D73D76298DF8D6C4F172DF4BEBB4 /* Pods-DesktopAPODTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DesktopAPODTests-dummy.m"; sourceTree = "<group>"; };
 		B7B6D38A36580A05D39E99551CC6752E /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
 		B8F51B4C6185C946595BB8EA408F96D7 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kanna.modulemap; sourceTree = "<group>"; };
-		BB77959EBDD6136A1306C9CF46670D48 /* Pods-APODDeskotopImageTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APODDeskotopImageTests-umbrella.h"; sourceTree = "<group>"; };
-		CE8D8353AD7B645AE275D3236091510F /* Pods-APODDeskotopImageTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APODDeskotopImageTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D37ED3C7755241E1693143F2E527A000 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6FFCA8BEAACB8070F6362C06C7F7BFC /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA14DDD463E32C8EAAEE6DE9BA8C243E /* Pods-DesktopAPODTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DesktopAPODTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6BFF458215C10A62EA9D7AEEA21F577 /* Pods-DesktopAPODTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DesktopAPODTests-umbrella.h"; sourceTree = "<group>"; };
 		E040D43135A5A6C37004F1BBF4C49942 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		E09920F09F15C8D9529D4715F2878889 /* Pods-DesktopAPODTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesktopAPODTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E773DB4BA0F7ED0C94EAFA8C0ED2DAD8 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		E9DCC2BD81262E38E160C0EED3E9435B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0B63F45F0998B262AD67DA7ABC0ACE /* Pods-DesktopAPOD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DesktopAPOD-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		274D29246B20E2D8F929C566019D6016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59861A0F47855EF333396726029FC1B8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56C2772FBF02120CA524F91B20C431FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,19 +91,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC46E6D95FCB705BFF51FD342D8F2997 /* Frameworks */ = {
+		F72BF00A13C1B113BBE146C4DBCEDB79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				645D3CCE5C949EA42D0EDF9DA0E65C23 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7FAD4467F4CCB17D841AF00F78E960B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				904BD41F91DF25FF821C2175E70D1096 /* Cocoa.framework in Frameworks */,
+				770CF1C4D71AC0E009A38FCEC5CBE311 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,14 +118,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		1987E0276721EFC36DBF8CC08A56261C /* Products */ = {
+		0FFB0D3AFBC5E2A8D640C4163F9C9DF1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D6FFCA8BEAACB8070F6362C06C7F7BFC /* Kanna.framework */,
-				1F855FD675797F0AE8DC528229C48A0F /* Pods_APODDeskotopImage.framework */,
-				77B03BB9023BEF24CD3678ADC75BEC78 /* Pods_APODDeskotopImageTests.framework */,
+				C6B2F9A4938B07434596E1561FB306EC /* Pods-DesktopAPOD */,
+				CF3F6CF8EC1B5992EA0EA2AD704E550A /* Pods-DesktopAPODTests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		2B0656BF2976E89BA0EE5AA6CF7092CF /* Support Files */ = {
@@ -140,24 +139,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Kanna";
-			sourceTree = "<group>";
-		};
-		34ACD200E4B68C844A34A42E004DCF7F /* Pods-APODDeskotopImageTests */ = {
-			isa = PBXGroup;
-			children = (
-				5AB64B9E605F8CEF1B7E57F57F924966 /* Info.plist */,
-				5042E57A93601570D230D0F51B8FCF1B /* Pods-APODDeskotopImageTests.modulemap */,
-				CE8D8353AD7B645AE275D3236091510F /* Pods-APODDeskotopImageTests-acknowledgements.markdown */,
-				1E797CB4F6E261CE0E48C261BF4B4935 /* Pods-APODDeskotopImageTests-acknowledgements.plist */,
-				A35A5AEE07CFD3BDD3EEB0401E12A823 /* Pods-APODDeskotopImageTests-dummy.m */,
-				1C2EA821AA8C4A2FAF51E3F3EA0C04FD /* Pods-APODDeskotopImageTests-frameworks.sh */,
-				0916C3DDCE7B936122058054B3F3C2E8 /* Pods-APODDeskotopImageTests-resources.sh */,
-				BB77959EBDD6136A1306C9CF46670D48 /* Pods-APODDeskotopImageTests-umbrella.h */,
-				87A621EEBE3533C2DA2C181539859A00 /* Pods-APODDeskotopImageTests.debug.xcconfig */,
-				7C849148DF9761BE34DBF5D09C6E6643 /* Pods-APODDeskotopImageTests.release.xcconfig */,
-			);
-			name = "Pods-APODDeskotopImageTests";
-			path = "Target Support Files/Pods-APODDeskotopImageTests";
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
@@ -183,52 +164,79 @@
 			path = Kanna;
 			sourceTree = "<group>";
 		};
-		4D5B5E405E2ABBCC04E1250C17AB2CDC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D25E8D202FE24A07F9166A419E4B6F03 /* Pods-APODDeskotopImage */,
-				34ACD200E4B68C844A34A42E004DCF7F /* Pods-APODDeskotopImageTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
 				0B2A79FB1A0189C35E82956502701321 /* Pods */,
-				1987E0276721EFC36DBF8CC08A56261C /* Products */,
-				4D5B5E405E2ABBCC04E1250C17AB2CDC /* Targets Support Files */,
+				F07585648BE0D1662A501375686EFD09 /* Products */,
+				0FFB0D3AFBC5E2A8D640C4163F9C9DF1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D25E8D202FE24A07F9166A419E4B6F03 /* Pods-APODDeskotopImage */ = {
+		C6B2F9A4938B07434596E1561FB306EC /* Pods-DesktopAPOD */ = {
 			isa = PBXGroup;
 			children = (
-				D37ED3C7755241E1693143F2E527A000 /* Info.plist */,
-				3E958C76F934C3F3DAE5E908C71ACB1A /* Pods-APODDeskotopImage.modulemap */,
-				331E31896BD1CCABA1C54E2CE33EC8EE /* Pods-APODDeskotopImage-acknowledgements.markdown */,
-				13273BFC8C3E9F871E6046F6DF715C42 /* Pods-APODDeskotopImage-acknowledgements.plist */,
-				9354E2AD080771F14AF8364AA7498957 /* Pods-APODDeskotopImage-dummy.m */,
-				439B2E69951CA6E88EE6DA0FCB60A452 /* Pods-APODDeskotopImage-frameworks.sh */,
-				7347310D7B34A41853A4008CD96CA1C2 /* Pods-APODDeskotopImage-resources.sh */,
-				0CFA8DA199938232D7F0567FAB2501FE /* Pods-APODDeskotopImage-umbrella.h */,
-				7C2BA0734AD1588E4AB528FFD45C5D1A /* Pods-APODDeskotopImage.debug.xcconfig */,
-				49FB73438473ADB21836BB3C54F571A4 /* Pods-APODDeskotopImage.release.xcconfig */,
+				E9DCC2BD81262E38E160C0EED3E9435B /* Info.plist */,
+				90C900C49300EE3674697B01C322F596 /* Pods-DesktopAPOD.modulemap */,
+				85FC2E4BDCCF2D707F0B3D78587B33ED /* Pods-DesktopAPOD-acknowledgements.markdown */,
+				4414A6791353A4285C30A9BE0582C1C8 /* Pods-DesktopAPOD-acknowledgements.plist */,
+				FB0B63F45F0998B262AD67DA7ABC0ACE /* Pods-DesktopAPOD-dummy.m */,
+				0B3377C38EAF35516F2BE65C42C54381 /* Pods-DesktopAPOD-frameworks.sh */,
+				A59F9CB127846CDA67BA5DFF4A4751D9 /* Pods-DesktopAPOD-resources.sh */,
+				74D757A70A3F560CD4B45A2E39980B15 /* Pods-DesktopAPOD-umbrella.h */,
+				97085E30DD7337D136CE97708FAF80D0 /* Pods-DesktopAPOD.debug.xcconfig */,
+				3CA731E28E0F24EE4C377DBBC694C698 /* Pods-DesktopAPOD.release.xcconfig */,
 			);
-			name = "Pods-APODDeskotopImage";
-			path = "Target Support Files/Pods-APODDeskotopImage";
+			name = "Pods-DesktopAPOD";
+			path = "Target Support Files/Pods-DesktopAPOD";
+			sourceTree = "<group>";
+		};
+		CF3F6CF8EC1B5992EA0EA2AD704E550A /* Pods-DesktopAPODTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B9C05D8B31A6A59C0D769A039788C5B /* Info.plist */,
+				908B952268EEABC509DFE1C456C1BA3F /* Pods-DesktopAPODTests.modulemap */,
+				1DAD86B55A577EFB577279FF3FF58660 /* Pods-DesktopAPODTests-acknowledgements.markdown */,
+				BA14DDD463E32C8EAAEE6DE9BA8C243E /* Pods-DesktopAPODTests-acknowledgements.plist */,
+				AE37D73D76298DF8D6C4F172DF4BEBB4 /* Pods-DesktopAPODTests-dummy.m */,
+				1EC791AF0EAD4DBB17E3CF53490ACEB6 /* Pods-DesktopAPODTests-frameworks.sh */,
+				AADF9491CA016820E2D8F1E2C235D271 /* Pods-DesktopAPODTests-resources.sh */,
+				C6BFF458215C10A62EA9D7AEEA21F577 /* Pods-DesktopAPODTests-umbrella.h */,
+				E09920F09F15C8D9529D4715F2878889 /* Pods-DesktopAPODTests.debug.xcconfig */,
+				0CE2B077E9644866DF77F56C90918FDA /* Pods-DesktopAPODTests.release.xcconfig */,
+			);
+			name = "Pods-DesktopAPODTests";
+			path = "Target Support Files/Pods-DesktopAPODTests";
+			sourceTree = "<group>";
+		};
+		F07585648BE0D1662A501375686EFD09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC8E7C4DD73F4A57C8D95674EE444C4 /* Kanna.framework */,
+				04AFFF8CA46BDFFADF3069AD85BB342E /* Pods_DesktopAPOD.framework */,
+				7D52BB564CAF45804580722CB19984C2 /* Pods_DesktopAPODTests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		955D8E92C6FB31B458D9AE9B63F2E223 /* Headers */ = {
+		5E8783892BFD9285474780DC989CC2FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4860771C3ADBC73DD0BE16787A33FADC /* Pods-APODDeskotopImageTests-umbrella.h in Headers */,
+				E79304600D11332309BE78FC4B535E76 /* Pods-DesktopAPODTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F299CCD43E19EC3640431D3449B2BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB83CD0E74A643ECDA5D73B71A977870 /* Pods-DesktopAPOD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,33 +249,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9B08D33AE8ACB57DB56C60A68E3F684 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52D053111A5B54172A1DCAF49A3125F3 /* Pods-APODDeskotopImage-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00C7FD7D66707C0FC77B54C225E6FA4C /* Pods-APODDeskotopImage */ = {
+		37068DD25DDE6EBEAB4ACABA1D1592F2 /* Pods-DesktopAPODTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A4DE818EE0AFA6F96F007050CD4AD24 /* Build configuration list for PBXNativeTarget "Pods-APODDeskotopImage" */;
+			buildConfigurationList = 730944411DC39315F87265E9D8186747 /* Build configuration list for PBXNativeTarget "Pods-DesktopAPODTests" */;
 			buildPhases = (
-				FA5FE3E729EF2A3E96627EF23935EFA0 /* Sources */,
-				BC46E6D95FCB705BFF51FD342D8F2997 /* Frameworks */,
-				B9B08D33AE8ACB57DB56C60A68E3F684 /* Headers */,
+				9D39F08203BC9FF9290142FA2000F615 /* Sources */,
+				274D29246B20E2D8F929C566019D6016 /* Frameworks */,
+				5E8783892BFD9285474780DC989CC2FB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F8C28568A7CF7FDD861EE9DE8ED08D4F /* PBXTargetDependency */,
 			);
-			name = "Pods-APODDeskotopImage";
-			productName = "Pods-APODDeskotopImage";
-			productReference = 1F855FD675797F0AE8DC528229C48A0F /* Pods_APODDeskotopImage.framework */;
+			name = "Pods-DesktopAPODTests";
+			productName = "Pods-DesktopAPODTests";
+			productReference = 7D52BB564CAF45804580722CB19984C2 /* Pods_DesktopAPODTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */ = {
@@ -284,24 +283,25 @@
 			);
 			name = Kanna;
 			productName = Kanna;
-			productReference = D6FFCA8BEAACB8070F6362C06C7F7BFC /* Kanna.framework */;
+			productReference = 4EC8E7C4DD73F4A57C8D95674EE444C4 /* Kanna.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7B11627A72DA1756292FA91B651F1B38 /* Pods-APODDeskotopImageTests */ = {
+		5D50BB8EEBABD1C5959B2CB50B04D3B9 /* Pods-DesktopAPOD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 887D3235A7B6332A82CCA49D2645150C /* Build configuration list for PBXNativeTarget "Pods-APODDeskotopImageTests" */;
+			buildConfigurationList = C02540FFA869FF2C6763E30BA31F83FB /* Build configuration list for PBXNativeTarget "Pods-DesktopAPOD" */;
 			buildPhases = (
-				6A719ED8CDBAF7A7B29EEC4FBE350F65 /* Sources */,
-				D7FAD4467F4CCB17D841AF00F78E960B /* Frameworks */,
-				955D8E92C6FB31B458D9AE9B63F2E223 /* Headers */,
+				FA5290C00185FFEAE3F982CE914652EA /* Sources */,
+				F72BF00A13C1B113BBE146C4DBCEDB79 /* Frameworks */,
+				67F299CCD43E19EC3640431D3449B2BC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CFB225ECBAADC3937AB1E2C8CA08903E /* PBXTargetDependency */,
 			);
-			name = "Pods-APODDeskotopImageTests";
-			productName = "Pods-APODDeskotopImageTests";
-			productReference = 77B03BB9023BEF24CD3678ADC75BEC78 /* Pods_APODDeskotopImageTests.framework */;
+			name = "Pods-DesktopAPOD";
+			productName = "Pods-DesktopAPOD";
+			productReference = 04AFFF8CA46BDFFADF3069AD85BB342E /* Pods_DesktopAPOD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +310,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -321,13 +321,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1987E0276721EFC36DBF8CC08A56261C /* Products */;
+			productRefGroup = F07585648BE0D1662A501375686EFD09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */,
-				00C7FD7D66707C0FC77B54C225E6FA4C /* Pods-APODDeskotopImage */,
-				7B11627A72DA1756292FA91B651F1B38 /* Pods-APODDeskotopImageTests */,
+				5D50BB8EEBABD1C5959B2CB50B04D3B9 /* Pods-DesktopAPOD */,
+				37068DD25DDE6EBEAB4ACABA1D1592F2 /* Pods-DesktopAPODTests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,37 +346,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A719ED8CDBAF7A7B29EEC4FBE350F65 /* Sources */ = {
+		9D39F08203BC9FF9290142FA2000F615 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348E9F18C207E05D761EA61EE083F746 /* Pods-APODDeskotopImageTests-dummy.m in Sources */,
+				B9FBB0511C1A33311F53D63538CD7776 /* Pods-DesktopAPODTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA5FE3E729EF2A3E96627EF23935EFA0 /* Sources */ = {
+		FA5290C00185FFEAE3F982CE914652EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F81873B6C4DCAE4E4559BE03CDBB6F68 /* Pods-APODDeskotopImage-dummy.m in Sources */,
+				E4D1D021848A2DCCEE1765A37B3CF59F /* Pods-DesktopAPOD-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F8C28568A7CF7FDD861EE9DE8ED08D4F /* PBXTargetDependency */ = {
+		CFB225ECBAADC3937AB1E2C8CA08903E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kanna;
 			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
-			targetProxy = 8AA01A055B34657F4D1AB10BC2EEB20C /* PBXContainerItemProxy */;
+			targetProxy = 606CBBB747A52E24B0119415F22842B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		29C6F587A56A8A393772B41ABA99FC61 /* Release */ = {
+		06754666C361D476B0999A84843218B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49FB73438473ADB21836BB3C54F571A4 /* Pods-APODDeskotopImage.release.xcconfig */;
+			baseConfigurationReference = 97085E30DD7337D136CE97708FAF80D0 /* Pods-DesktopAPOD.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -384,7 +384,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -392,30 +392,70 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-APODDeskotopImage/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DesktopAPOD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-APODDeskotopImage/Pods-APODDeskotopImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-DesktopAPOD/Pods-DesktopAPOD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_APODDeskotopImage;
+				PRODUCT_NAME = Pods_DesktopAPOD;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		34342BBF37D3A9ED85FF2EB654934920 /* Debug */ = {
+		24F30B710227A5A27277E9C8D2A9CC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB1B2A10CD6FD3EC3E960A4C0C06EBD /* Kanna.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		337AD37B27D7FFADF01DD8D7FE35B27B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -423,10 +463,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -455,9 +498,46 @@
 			};
 			name = Debug;
 		};
-		4463B5FE49207A76CD074516E9D3EF33 /* Release */ = {
+		3C3C8B37CFADB7BF3CBA879B95DF5D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C849148DF9761BE34DBF5D09C6E6643 /* Pods-APODDeskotopImageTests.release.xcconfig */;
+			baseConfigurationReference = E09920F09F15C8D9529D4715F2878889 /* Pods-DesktopAPODTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DesktopAPODTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-DesktopAPODTests/Pods-DesktopAPODTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DesktopAPODTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88BB0D8D2FA42685B164363638324F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA731E28E0F24EE4C377DBBC694C698 /* Pods-DesktopAPOD.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -473,26 +553,28 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-APODDeskotopImageTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DesktopAPOD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-APODDeskotopImageTests/Pods-APODDeskotopImageTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DesktopAPOD/Pods-DesktopAPOD.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_APODDeskotopImageTests;
+				PRODUCT_NAME = Pods_DesktopAPOD;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		66FE08796BADE37EFB0DE07E0564B394 /* Release */ = {
+		F3490C718D204EB63473A4A203A2887D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADB1B2A10CD6FD3EC3E960A4C0C06EBD /* Kanna.xcconfig */;
 			buildSettings = {
@@ -520,15 +602,16 @@
 				PRODUCT_NAME = Kanna;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8F002EFE3062F77F81E1972784A7D75E /* Debug */ = {
+		F9A22E9B2C2291799845A7CE4639EF82 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87A621EEBE3533C2DA2C181539859A00 /* Pods-APODDeskotopImageTests.debug.xcconfig */;
+			baseConfigurationReference = 0CE2B077E9644866DF77F56C90918FDA /* Pods-DesktopAPODTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -536,7 +619,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -544,103 +627,31 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-APODDeskotopImageTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-DesktopAPODTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-APODDeskotopImageTests/Pods-APODDeskotopImageTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-DesktopAPODTests/Pods-DesktopAPODTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_APODDeskotopImageTests;
+				PRODUCT_NAME = Pods_DesktopAPODTests;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		AB80895BC7FC7547284B7052278175B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADB1B2A10CD6FD3EC3E960A4C0C06EBD /* Kanna.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kanna;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EA61E418AD3CE312DB5B70DC134CAF4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C2BA0734AD1588E4AB528FFD45C5D1A /* Pods-APODDeskotopImage.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-APODDeskotopImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-APODDeskotopImage/Pods-APODDeskotopImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_APODDeskotopImage;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F6FC88CB717F413199C282718D2DC09F /* Release */ = {
+		FC4738C3605827B2CD972C349A860865 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -648,10 +659,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -682,8 +696,8 @@
 		032FE6A4FF03E43B2C60899A35389C7F /* Build configuration list for PBXNativeTarget "Kanna" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB80895BC7FC7547284B7052278175B8 /* Debug */,
-				66FE08796BADE37EFB0DE07E0564B394 /* Release */,
+				24F30B710227A5A27277E9C8D2A9CC8C /* Debug */,
+				F3490C718D204EB63473A4A203A2887D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -691,26 +705,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				34342BBF37D3A9ED85FF2EB654934920 /* Debug */,
-				F6FC88CB717F413199C282718D2DC09F /* Release */,
+				337AD37B27D7FFADF01DD8D7FE35B27B /* Debug */,
+				FC4738C3605827B2CD972C349A860865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A4DE818EE0AFA6F96F007050CD4AD24 /* Build configuration list for PBXNativeTarget "Pods-APODDeskotopImage" */ = {
+		730944411DC39315F87265E9D8186747 /* Build configuration list for PBXNativeTarget "Pods-DesktopAPODTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA61E418AD3CE312DB5B70DC134CAF4E /* Debug */,
-				29C6F587A56A8A393772B41ABA99FC61 /* Release */,
+				3C3C8B37CFADB7BF3CBA879B95DF5D5E /* Debug */,
+				F9A22E9B2C2291799845A7CE4639EF82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		887D3235A7B6332A82CCA49D2645150C /* Build configuration list for PBXNativeTarget "Pods-APODDeskotopImageTests" */ = {
+		C02540FFA869FF2C6763E30BA31F83FB /* Build configuration list for PBXNativeTarget "Pods-DesktopAPOD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F002EFE3062F77F81E1972784A7D75E /* Debug */,
-				4463B5FE49207A76CD074516E9D3EF33 /* Release */,
+				06754666C361D476B0999A84843218B7 /* Debug */,
+				88BB0D8D2FA42685B164363638324F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

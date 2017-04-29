@@ -1,6 +1,0 @@
-framework module Pods_APODDeskotopImageTests {
-  umbrella header "Pods-APODDeskotopImageTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

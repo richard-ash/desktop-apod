@@ -46,6 +46,18 @@ github "tid-kijyun/Kanna" ~> 2.1.0
 1. In the project settings add `$(SDKROOT)/usr/include/libxml2` to the "header search paths" field
 
 #####Swift Package Manager
+
+Installing libxml2 to your computer:
+
+```
+// macOS
+$ brew install libxml2
+$ brew link --force libxml2
+
+// Linux(Ubuntu)
+$ sudo apt-get install libxml2-dev
+```
+
 Adding it to your `Package.swift`:
 
 ```
@@ -63,6 +75,22 @@ let package = Package(
 ```
 $ swift build
 ```
+
+*Note: When a build error occurs, please try run the following command:*
+```
+$ sudo apt-get install pkg-config
+```
+
+#####Manual Installation
+1. Add these files to your project:  
+  [Kanna.swift](Source/Kanna.swift)  
+  [CSS.swift](Source/CSS.swift)  
+  [libxmlHTMLDocument.swift](Source/libxml/libxmlHTMLDocument.swift)  
+  [libxmlHTMLNode.swift](Source/libxml/libxmlHTMLNode.swift)  
+  [libxmlParserOption.swift](Source/libxml/libxmlParserOption.swift)  
+  [Modules](Modules)
+1. In the target settings add `$(SDKROOT)/usr/include/libxml2` to the `Search Paths > Header Search Paths` field
+1. In the target settings add `$(SRCROOT)/Modules` to the `Swift Compiler - Search Paths > Import Paths` field
 
 ### Swift 2.x
 

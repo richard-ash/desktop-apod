@@ -1,0 +1,6 @@
+framework module Pods_DesktopAPOD {
+  umbrella header "Pods-DesktopAPOD-umbrella.h"
+
+  export *
+  module * { export * }
+}

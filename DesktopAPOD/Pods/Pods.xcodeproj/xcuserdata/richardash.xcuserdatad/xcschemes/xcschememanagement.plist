@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-APODDeskotopImage.xcscheme</key>
+		<key>Pods-DesktopAPOD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-APODDeskotopImageTests.xcscheme</key>
+		<key>Pods-DesktopAPODTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +22,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00C7FD7D66707C0FC77B54C225E6FA4C</key>
+		<key>37068DD25DDE6EBEAB4ACABA1D1592F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B11627A72DA1756292FA91B651F1B38</key>
+		<key>5D50BB8EEBABD1C5959B2CB50B04D3B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

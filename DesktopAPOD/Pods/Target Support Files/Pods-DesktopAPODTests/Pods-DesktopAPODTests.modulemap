@@ -1,0 +1,6 @@
+framework module Pods_DesktopAPODTests {
+  umbrella header "Pods-DesktopAPODTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
