@@ -19,6 +19,7 @@
 		8BDBF7C91EB5291A008C6D59 /* APODFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBF7C71EB5291A008C6D59 /* APODFileManager.swift */; };
 		8BDBF7CB1EB53399008C6D59 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBF7CA1EB53399008C6D59 /* Spinner.swift */; };
 		8BDBF7CE1EB5373D008C6D59 /* APODManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBF7CD1EB5373D008C6D59 /* APODManagerTests.swift */; };
+		8BDBF7D01EB538E1008C6D59 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBF7CF1EB538E1008C6D59 /* EventMonitor.swift */; };
 		BD24430C154A8424A8269147 /* Pods_DesktopAPOD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADDC589275BAC28EAB61A84 /* Pods_DesktopAPOD.framework */; };
 		D8F50266F9EE14957CFB2FD1 /* Pods_DesktopAPODTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFBBFF8F1E61AF9B07AAFBA /* Pods_DesktopAPODTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		8BDBF7C71EB5291A008C6D59 /* APODFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODFileManager.swift; sourceTree = "<group>"; };
 		8BDBF7CA1EB53399008C6D59 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		8BDBF7CD1EB5373D008C6D59 /* APODManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODManagerTests.swift; sourceTree = "<group>"; };
+		8BDBF7CF1EB538E1008C6D59 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		986FC8A511C6094F5B3C8B53 /* Pods-DesktopAPOD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesktopAPOD.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesktopAPOD/Pods-DesktopAPOD.release.xcconfig"; sourceTree = "<group>"; };
 		ACFBBFF8F1E61AF9B07AAFBA /* Pods_DesktopAPODTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesktopAPODTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +149,7 @@
 				8BDBF7C61EB5291A008C6D59 /* APIClient.swift */,
 				8BDBF7C71EB5291A008C6D59 /* APODFileManager.swift */,
 				8BDBF7BB1EB519A1008C6D59 /* APOD.swift */,
+				8BDBF7CF1EB538E1008C6D59 /* EventMonitor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				8BDBF7BC1EB519A1008C6D59 /* APOD.swift in Sources */,
 				8BDBF7BF1EB5288D008C6D59 /* URLSession-Extension.swift in Sources */,
 				8BDBF79C1EB51413008C6D59 /* AppDelegate.swift in Sources */,
+				8BDBF7D01EB538E1008C6D59 /* EventMonitor.swift in Sources */,
 				8BDBF7C81EB5291A008C6D59 /* APIClient.swift in Sources */,
 				8BDBF7CB1EB53399008C6D59 /* Spinner.swift in Sources */,
 			);

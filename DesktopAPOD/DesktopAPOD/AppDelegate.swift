@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   let popover = NSPopover()
   let apodFileManager = APODFileManager()
   let apiClient = APIClient()
+  var eventMonitor: EventMonitor?
   
   // MARK: - NS Application Delegate
 
@@ -34,6 +35,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       popoverViewController.apodFileManager = apodFileManager
       popover.contentViewController = popoverViewController
     }
+    
+    // Configure the Event Monitor
+    eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in
+      if self.popover.isShown {
+        self.closePopover(event)
+      }
+    }
+    eventMonitor?.start()
   }
   
   func applicationWillTerminate(_ notification: Notification) {
@@ -46,15 +55,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     if let button = statusItem.button {
       popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
     }
+    eventMonitor?.start()
   }
   
   func closePopover(_ sender: Any?) {
     popover.performClose(sender)
+    eventMonitor?.stop()
   }
   
   func togglePopover(_ sender: Any?) {
     popover.isShown ? closePopover(sender) : showPopover(sender)
   }
-
 }
 
