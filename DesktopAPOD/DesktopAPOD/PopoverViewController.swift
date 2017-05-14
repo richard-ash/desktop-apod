@@ -38,12 +38,14 @@ class PopoverViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    dateTextField.stringValue = ""
     view.layer?.backgroundColor = NSColor.black.cgColor
     spinner.isHidden = true
 
     if let apod = apod {
       configureUI(with: apod)
     } else {
+      spinner.isHidden = false
       refreshAPOD()
     }
   }

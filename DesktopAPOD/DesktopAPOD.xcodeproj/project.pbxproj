@@ -47,6 +47,7 @@
 		8B602F811EC7E33200992C9A /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		8B602F831EC7FAFB00992C9A /* NSStoryboard-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSStoryboard-Extension.swift"; sourceTree = "<group>"; };
 		8B602F851EC8006C00992C9A /* BackgroundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundButton.swift; sourceTree = "<group>"; };
+		8B602F871EC80BE900992C9A /* DesktopAPOD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DesktopAPOD.entitlements; sourceTree = "<group>"; };
 		8BDBF7981EB51413008C6D59 /* DesktopAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDBF79B1EB51413008C6D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDBF79F1EB51413008C6D59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				8BDBF79F1EB51413008C6D59 /* Assets.xcassets */,
+				8B602F871EC80BE900992C9A /* DesktopAPOD.entitlements */,
 				8BDBF7A41EB51413008C6D59 /* Info.plist */,
 				8B602F811EC7E33200992C9A /* License.txt */,
 			);
@@ -275,6 +277,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9WA7X7DV9W;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					8BDBF7AD1EB5142E008C6D59 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -564,6 +571,7 @@
 			baseConfigurationReference = 572A1CEFFF8C7C792DFEFEE7 /* Pods-DesktopAPOD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DesktopAPOD/DesktopAPOD.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9WA7X7DV9W;
@@ -581,6 +589,7 @@
 			baseConfigurationReference = 986FC8A511C6094F5B3C8B53 /* Pods-DesktopAPOD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DesktopAPOD/DesktopAPOD.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9WA7X7DV9W;

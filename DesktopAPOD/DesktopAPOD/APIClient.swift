@@ -30,7 +30,7 @@ class APIClient {
       case let .success(data):
         completion(NSImage(data: data))
       case let .failure(error):
-        NSLog("\(error)")
+        NSLog("Network Error: \(error)")
         completion(nil)
       }
     })
