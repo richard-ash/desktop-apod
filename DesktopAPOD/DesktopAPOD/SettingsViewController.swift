@@ -8,16 +8,27 @@
 
 import Cocoa
 
+protocol SettingsViewControllerDelegate: class {
+  func settingsViewController(_ controller: SettingsViewController, laucherToggledTo state: Bool)
+}
+
 class SettingsViewController: NSViewController {
   
   // MARK: - IBOutlet Properties
   
   @IBOutlet weak var textView: NSTextView!
+  @IBOutlet weak var launcherButton: NSButton!
+  
+  // MARK: - Properties
+  
+  weak var delegate: SettingsViewControllerDelegate?
 
+  // MARK: - Overridden Methods
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do view setup here.
     configureTextView()
+    configureLauncherButton()
   }
   
   // MARK: - IBAction Methods
@@ -26,9 +37,28 @@ class SettingsViewController: NSViewController {
     NSApplication.shared().terminate(sender)
   }
   
+  @IBAction func toggleLauncherApplication(_ sender: NSButton) {
+    switch sender.state {
+    case NSOnState:
+      UserDefaults.standard.set(true, forKey: "launcherApplication")
+      delegate?.settingsViewController(self, laucherToggledTo: true)
+    case NSOffState:
+      UserDefaults.standard.set(false, forKey: "launcherApplication")
+      delegate?.settingsViewController(self, laucherToggledTo: false)
+    default:
+      break
+    }
+  }
+  
   // MARK: - Private Methods
   
-  func configureTextView() {
+  private func configureLauncherButton() {
+    if UserDefaults.standard.bool(forKey: "launcherApplication") {
+      launcherButton.state = NSOnState
+    }
+  }
+  
+  private func configureTextView() {
     textView.backgroundColor = .clear
     textView.isEditable = false
     

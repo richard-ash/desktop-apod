@@ -8,7 +8,7 @@
 
 import Cocoa
 
-protocol PopoverViewControllerDelegate {
+protocol PopoverViewControllerDelegate: class {
   func popoverViewController(_ popoverViewController: PopoverViewController, settingsWasTapped button: NSButton?)
 }
 
@@ -31,7 +31,7 @@ class PopoverViewController: NSViewController {
   var apiClient: APIClient!
   var apodFileManager: APODFileManager!
   var apod = APOD.loadAPOD()
-  var delegate: PopoverViewControllerDelegate?
+  weak var delegate: PopoverViewControllerDelegate?
   
   // MARK: - Overridden Methods
   

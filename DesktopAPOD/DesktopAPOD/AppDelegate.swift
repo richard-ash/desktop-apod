@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -23,27 +24,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   // MARK: - NS Application Delegate
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    // Configure Status Item Button
-    if let button = statusItem.button {
-      button.image = #imageLiteral(resourceName: "JupiterStatusIcon")
-      button.action = #selector(togglePopover)
+    // Setup Launcher Application
+    if UserDefaults.standard.bool(forKey: "launcherApplication") {
+      setupLauncherApplication()
     }
+    
+    // Configure Status Item Button
+    configureStatusBarButton()
     
     // Configure the Popover View Controller
-    if let popoverViewController = NSStoryboard.main.instantiateController(withIdentifier: PopoverViewController.identifier) as? PopoverViewController {
-      popoverViewController.apiClient = apiClient
-      popoverViewController.apodFileManager = apodFileManager
-      popoverViewController.delegate = self
-      popover.contentViewController = popoverViewController
-    }
+    configurePopoverViewController()
     
     // Configure the Event Monitor
-    eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in
-      if self.popover.isShown {
-        self.closePopover(event)
-      }
-    }
-    eventMonitor?.start()
+    configureEventMonitor()
   }
   
   // MARK: - Methods
@@ -63,6 +56,47 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func togglePopover(_ sender: Any?) {
     popover.isShown ? closePopover(sender) : showPopover(sender)
   }
+  
+  // MARK: - Private Methods
+  
+  fileprivate func setupLauncherApplication() {
+    let launcherApplicationIdentifier = "com.richardash.LauncherApplication"
+    
+    SMLoginItemSetEnabled(launcherApplicationIdentifier as CFString, true)
+    
+    let startedAtLogin = NSWorkspace.shared().runningApplications.contains { (application) -> Bool in
+      application.bundleIdentifier == launcherApplicationIdentifier
+    }
+    
+    if startedAtLogin {
+      DistributedNotificationCenter.default().post(name: NSNotification.Name("killLaunchApplication"), object: nil)
+    }
+  }
+  
+  private func configureStatusBarButton() {
+    if let button = statusItem.button {
+      button.image = #imageLiteral(resourceName: "JupiterStatusIcon")
+      button.action = #selector(togglePopover)
+    }
+  }
+  
+  private func configureEventMonitor() {
+    eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [unowned self] event in
+      if self.popover.isShown {
+        self.closePopover(event)
+      }
+    }
+    eventMonitor?.start()
+  }
+  
+  private func configurePopoverViewController() {
+    if let popoverViewController = NSStoryboard.main.instantiateController(withIdentifier: PopoverViewController.identifier) as? PopoverViewController {
+      popoverViewController.apiClient = apiClient
+      popoverViewController.apodFileManager = apodFileManager
+      popoverViewController.delegate = self
+      popover.contentViewController = popoverViewController
+    }
+  }
 }
 
 // MARK: - PopoverViewControllerDelegate
@@ -70,7 +104,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 extension AppDelegate: PopoverViewControllerDelegate {
   func popoverViewController(_ popoverViewController: PopoverViewController, settingsWasTapped button: NSButton?) {
     settingsWindow = NSStoryboard.main.instantiateController(withIdentifier: "SettingsWindowController") as? NSWindowController
+    
+    let settingsViewController = settingsWindow?.contentViewController as? SettingsViewController
+    settingsViewController?.delegate = self
+    
     settingsWindow?.showWindow(self)
     closePopover(button)
+  }
+}
+
+// MARK: - SettingsViewControllerDelegate
+
+extension AppDelegate: SettingsViewControllerDelegate {
+  func settingsViewController(_ controller: SettingsViewController, laucherToggledTo state: Bool) {
+    if state {
+      setupLauncherApplication()
+    } else {
+      let launcherApplicationIdentifier = "com.richardash.LauncherApplication"
+      SMLoginItemSetEnabled(launcherApplicationIdentifier as CFString, false)
+      DistributedNotificationCenter.default().post(name: NSNotification.Name("killLaunchApplication"), object: nil)
+    }
   }
 }
