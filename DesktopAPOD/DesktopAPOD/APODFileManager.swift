@@ -40,23 +40,15 @@ class APODFileManager {
     }
   }
   
-  func saveAPODImage(_ image: NSImage) {
+  func saveAPODImage(_ image: NSImage) throws {
     guard let tiffData = image.tiffRepresentation else { return }
     let imageRep = NSBitmapImageRep(data: tiffData)
     guard let imageData = imageRep?.representation(using: .PNG, properties: [:]) else { return }
-    do {
-      try imageData.write(to: apodImageURL)
-    } catch {
-      NSLog("Failed to same image: \(error)")
-    }
+    try imageData.write(to: apodImageURL)
   }
   
-  func updateDesktopImageWithSavedAPOD() {
+  func updateDesktopImageWithSavedAPOD() throws {
     guard let mainScreen = NSScreen.screens()?.first else { return }
-    do {
-      try NSWorkspace.shared().setDesktopImageURL(apodImageURL, for: mainScreen, options: [:])
-    } catch {
-      NSLog("Failed to update Desktop: \(error)")
-    }
+    try NSWorkspace.shared().setDesktopImageURL(apodImageURL, for: mainScreen, options: [:])
   }
 }

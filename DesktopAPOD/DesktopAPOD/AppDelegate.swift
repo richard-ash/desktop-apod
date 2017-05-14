@@ -18,21 +18,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   let apodFileManager = APODFileManager()
   let apiClient = APIClient()
   var eventMonitor: EventMonitor?
+  var settingsWindow: NSWindowController?
   
   // MARK: - NS Application Delegate
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Configure Status Item Button
     if let button = statusItem.button {
-      button.image = #imageLiteral(resourceName: "StatusBarButtonImage")
-      button.action = #selector(AppDelegate.togglePopover)
+      button.image = #imageLiteral(resourceName: "JupiterStatusIcon")
+      button.action = #selector(togglePopover)
     }
     
     // Configure the Popover View Controller
-    let storyboard = NSStoryboard(name: "Main", bundle: nil)
-    if let popoverViewController = storyboard.instantiateController(withIdentifier: PopoverViewController.identifier) as? PopoverViewController {
+    if let popoverViewController = NSStoryboard.main.instantiateController(withIdentifier: PopoverViewController.identifier) as? PopoverViewController {
       popoverViewController.apiClient = apiClient
       popoverViewController.apodFileManager = apodFileManager
+      popoverViewController.delegate = self
       popover.contentViewController = popoverViewController
     }
     
@@ -45,10 +46,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     eventMonitor?.start()
   }
   
-  func applicationWillTerminate(_ notification: Notification) {
-    // Will terminate
-  }
-
   // MARK: - Methods
   
   func showPopover(_ sender: Any?) {
@@ -68,3 +65,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 }
 
+// MARK: - PopoverViewControllerDelegate
+
+extension AppDelegate: PopoverViewControllerDelegate {
+  func popoverViewController(_ popoverViewController: PopoverViewController, settingsWasTapped button: NSButton?) {
+    settingsWindow = NSStoryboard.main.instantiateController(withIdentifier: "SettingsWindowController") as? NSWindowController
+    settingsWindow?.showWindow(self)
+    closePopover(button)
+  }
+}

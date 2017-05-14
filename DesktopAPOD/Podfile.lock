@@ -1,11 +1,11 @@
 PODS:
-  - Kanna (2.2.0)
+  - Kanna (2.2.1)
 
 DEPENDENCIES:
   - Kanna
 
 SPEC CHECKSUMS:
-  Kanna: b3b3368d673845f48c572c6746c2278deebe26b9
+  Kanna: 182789ab065e8f9a6ccc2a74ce6283d3401c0c4a
 
 PODFILE CHECKSUM: e33a2e59eda5bc23051abd40e7f4a6312998a5f9
 
