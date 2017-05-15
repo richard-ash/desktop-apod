@@ -392,11 +392,11 @@
             <objects>
                 <viewController storyboardIdentifier="PopoverViewController" id="f6H-Vd-sNC" customClass="PopoverViewController" customModule="DesktopAPOD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="jAt-1i-Kci">
-                        <rect key="frame" x="0.0" y="0.0" width="481" height="295"/>
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="299"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cnY-b8-9xh">
-                                <rect key="frame" x="63" y="67" width="355" height="183"/>
+                                <rect key="frame" x="63" y="71" width="355" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="355" id="8mb-J0-DiX"/>
                                     <constraint firstAttribute="height" constant="183" id="VAe-yD-Wih"/>
@@ -404,7 +404,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="iL2-Ma-TND"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAr-cI-9Wf">
-                                <rect key="frame" x="162" y="258" width="157" height="29"/>
+                                <rect key="frame" x="162" y="262" width="157" height="29"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desktop APOD" id="fAY-dq-bT3">
                                     <font key="font" size="24" name="HelveticaNeue-Thin"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -432,7 +432,7 @@
                                 </connections>
                             </button>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2a-jW-ChV">
-                                <rect key="frame" x="188" y="39" width="106" height="20"/>
+                                <rect key="frame" x="188" y="43" width="106" height="20"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-PO-YEk">
                                         <rect key="frame" x="-2" y="0.0" width="78" height="20"/>
@@ -464,7 +464,7 @@
                                 <rect key="frame" x="112" y="13" width="16" height="16"/>
                             </progressIndicator>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lat-vp-E2e">
-                                <rect key="frame" x="449" y="263" width="25" height="25"/>
+                                <rect key="frame" x="449" y="267" width="25" height="25"/>
                                 <buttonCell key="cell" type="help" bezelStyle="helpButton" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Glf-87-cII">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -473,27 +473,52 @@
                                     <action selector="goToSettings:" target="f6H-Vd-sNC" id="gdG-ei-8SS"/>
                                 </connections>
                             </button>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-wq-5dh" customClass="ErrorView" customModule="DesktopAPOD" customModuleProvider="target">
+                                <rect key="frame" x="20" y="30" width="441" height="40"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIA-hY-P0q">
+                                        <rect key="frame" x="200" y="12" width="41" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="6i1-HV-kfB">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E46-8i-a2M"/>
+                                    <constraint firstItem="HIA-hY-P0q" firstAttribute="centerY" secondItem="a3U-wq-5dh" secondAttribute="centerY" id="USA-PJ-aN6"/>
+                                    <constraint firstItem="HIA-hY-P0q" firstAttribute="centerX" secondItem="a3U-wq-5dh" secondAttribute="centerX" id="lpP-aY-JkA"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="errorLabel" destination="HIA-hY-P0q" id="kUI-y2-dg7"/>
+                                </connections>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="kAr-cI-9Wf" firstAttribute="top" secondItem="jAt-1i-Kci" secondAttribute="top" constant="8" id="0UW-yw-6e0"/>
                             <constraint firstAttribute="bottom" secondItem="Pd8-H4-Hq4" secondAttribute="bottom" constant="10" id="6PS-3o-eLR"/>
                             <constraint firstAttribute="trailing" secondItem="lat-vp-E2e" secondAttribute="trailing" constant="9" id="ENN-3u-DOf"/>
+                            <constraint firstAttribute="trailing" secondItem="a3U-wq-5dh" secondAttribute="trailing" constant="20" id="Gnt-pa-wBI"/>
                             <constraint firstItem="E2a-jW-ChV" firstAttribute="centerX" secondItem="jAt-1i-Kci" secondAttribute="centerX" id="IP9-Nv-mDs"/>
                             <constraint firstItem="Pd8-H4-Hq4" firstAttribute="leading" secondItem="jAt-1i-Kci" secondAttribute="leading" constant="10" id="PzC-Ik-Q7e"/>
                             <constraint firstAttribute="trailing" secondItem="Gca-pr-z4J" secondAttribute="trailing" constant="10" id="R9x-nk-gxM"/>
                             <constraint firstAttribute="bottom" secondItem="Gca-pr-z4J" secondAttribute="bottom" constant="10" id="SOy-cN-jDP"/>
                             <constraint firstItem="cnY-b8-9xh" firstAttribute="centerX" secondItem="jAt-1i-Kci" secondAttribute="centerX" id="VMq-Uk-Wgp"/>
+                            <constraint firstItem="a3U-wq-5dh" firstAttribute="leading" secondItem="jAt-1i-Kci" secondAttribute="leading" constant="20" id="fca-zu-o2b"/>
                             <constraint firstItem="lat-vp-E2e" firstAttribute="top" secondItem="jAt-1i-Kci" secondAttribute="top" constant="8" id="fmx-8N-4wB"/>
                             <constraint firstItem="cnY-b8-9xh" firstAttribute="top" secondItem="kAr-cI-9Wf" secondAttribute="bottom" constant="8" id="gG3-sp-sy3"/>
                             <constraint firstItem="VPK-xs-Cty" firstAttribute="leading" secondItem="Pd8-H4-Hq4" secondAttribute="trailing" constant="8" id="hHd-lE-SBb"/>
                             <constraint firstItem="VPK-xs-Cty" firstAttribute="centerY" secondItem="Pd8-H4-Hq4" secondAttribute="centerY" id="kOe-Sq-lgc"/>
                             <constraint firstItem="kAr-cI-9Wf" firstAttribute="centerX" secondItem="jAt-1i-Kci" secondAttribute="centerX" id="l5w-1A-bav"/>
+                            <constraint firstItem="VPK-xs-Cty" firstAttribute="top" secondItem="a3U-wq-5dh" secondAttribute="bottom" constant="1" id="xQX-Av-bTw"/>
                             <constraint firstItem="E2a-jW-ChV" firstAttribute="top" secondItem="cnY-b8-9xh" secondAttribute="bottom" constant="8" id="xmW-GQ-9P0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundButton" destination="Gca-pr-z4J" id="ZAM-Ia-vJI"/>
                         <outlet property="dateTextField" destination="KGx-1d-l8G" id="Goy-AN-IC1"/>
+                        <outlet property="errorView" destination="a3U-wq-5dh" id="s6D-za-aCD"/>
                         <outlet property="imageView" destination="cnY-b8-9xh" id="MSt-da-jq7"/>
                         <outlet property="refreshButton" destination="Pd8-H4-Hq4" id="Qa0-fI-ZtD"/>
                         <outlet property="spinner" destination="VPK-xs-Cty" id="hyU-7U-Khe"/>
@@ -501,7 +526,7 @@
                 </viewController>
                 <customObject id="1Ay-r6-7Uw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44.5" y="290.5"/>
+            <point key="canvasLocation" x="44.5" y="319.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Vqe-SK-d4W">

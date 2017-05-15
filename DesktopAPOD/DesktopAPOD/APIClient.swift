@@ -12,6 +12,15 @@ import Kanna
 
 class APIClient {
   
+  // MARK: - Objects
+  
+  enum APIError: Error {
+    case noImage
+    case cannontParseHTML
+    case cannotFindApodURL
+    case other(String)
+  }
+  
   // MARK: - Properties
   
   private let session: URLSession
@@ -37,13 +46,13 @@ class APIClient {
     task.resume()
   }
   
-  func getAPODImageURL() -> URL? {
+  func getAPODImageURL() -> Result<URL> {
     let base = "https://apod.nasa.gov/apod/"
-    guard let url = URL(string: base) else { return nil }
-    guard let htmlString = try? String(contentsOf: url) else { return nil }
-    guard let doc = HTML(html: htmlString, encoding: .utf8) else { return nil }
-    guard let partialImageURL = doc.css("a, center").flatMap({ $0["href"] }).filter({ $0.contains("image") }).first else { return nil }
-    guard let imageURL = URL(string: base + partialImageURL) else { return nil }
-    return imageURL
+    guard let url = URL(string: base) else { return .failure(APIError.cannotFindApodURL) }
+    guard let htmlString = try? String(contentsOf: url) else { return .failure(APIError.cannontParseHTML) }
+    guard let doc = HTML(html: htmlString, encoding: .utf8) else { return .failure(APIError.cannontParseHTML) }
+    guard let partialImageURL = doc.css("a, center").flatMap({ $0["href"] }).filter({ $0.contains("image") }).first else { return .failure(APIError.noImage) }
+    guard let imageURL = URL(string: base + partialImageURL) else { return .failure(APIError.cannontParseHTML) }
+    return .success(imageURL)
   }
 }

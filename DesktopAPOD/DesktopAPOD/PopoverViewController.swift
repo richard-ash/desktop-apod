@@ -25,6 +25,7 @@ class PopoverViewController: NSViewController {
   @IBOutlet weak var refreshButton: NSButton!
   @IBOutlet weak var backgroundButton: BackgroundButton!
   @IBOutlet weak var spinner: Spinner!
+  @IBOutlet weak var errorView: ErrorView!
   
   // MARK: - Properties
   
@@ -107,12 +108,23 @@ class PopoverViewController: NSViewController {
   // MARK: - Private Methods
   
   private func getAPOD(completion: @escaping (APOD) -> Void) {
-    guard let imageURL = apiClient.getAPODImageURL() else { return }
-    
-    apiClient.downloadImage(from: imageURL) { (image) in
-      guard let image = image else { return }
-      let apod = APOD(image: image, date: Date())
-      completion(apod)
+    switch apiClient.getAPODImageURL() {
+    case .success(let imageURL):
+      apiClient.downloadImage(from: imageURL) { (image) in
+        guard let image = image else { return }
+        let apod = APOD(image: image, date: Date())
+        completion(apod)
+      }
+    case .failure(let error as APIClient.APIError):
+      handleAPIClientError(error)
+    case .failure(let error):
+      handleAPIClientError(.other("\(error)"))
+    }
+  }
+  
+  private func handleAPIClientError(_ error: APIClient.APIError) {
+    errorView.animate(with: error) { [weak self] in
+      self?.spinner.isHidden = true
     }
   }
 }
