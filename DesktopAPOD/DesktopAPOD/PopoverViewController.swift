@@ -51,6 +51,11 @@ class PopoverViewController: NSViewController {
     }
   }
   
+  override func viewWillDisappear() {
+    super.viewWillDisappear()
+    spinner.isHidden = true
+  }
+  
   // MARK: - IB Action Methods
   
   @IBAction func refresh(_ sender: Any?) {
