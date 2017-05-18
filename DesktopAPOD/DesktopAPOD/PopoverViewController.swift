@@ -98,11 +98,11 @@ class PopoverViewController: NSViewController {
   
   func updateDesktopBackground(with apod: APOD) {
     apodFileManager.createAPODDirectory()
-    apodFileManager.removeAPODFile()
+    apodFileManager.removeFilesFromAPODDirectory()
     
     do {
-      try apodFileManager.saveAPODImage(apod.image)
-      try apodFileManager.updateDesktopImageWithSavedAPOD()
+      try apodFileManager.saveAPODImage(apod)
+      try apodFileManager.updateDesktopImage(from: apod)
     } catch {
       backgroundButton.animateUpdateFailed()
     }
@@ -113,11 +113,11 @@ class PopoverViewController: NSViewController {
   // MARK: - Private Methods
   
   private func getAPOD(completion: @escaping (APOD) -> Void) {
-    switch apiClient.getAPODImageURL() {
-    case .success(let imageURL):
-      apiClient.downloadImage(from: imageURL) { (image) in
+    switch apiClient.getAPODData() {
+    case .success(let apodData):
+      apiClient.downloadImage(from: apodData.imageURL) { (image) in
         guard let image = image else { return }
-        let apod = APOD(image: image, date: Date())
+        let apod = APOD(title: apodData.title, image: image, date: Date())
         completion(apod)
       }
     case .failure(let error as APIClient.APIError):

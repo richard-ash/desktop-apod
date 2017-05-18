@@ -18,12 +18,6 @@ class APODFileManager {
     case couldNotParseImage
   }
   
-  // MARK: - Properties
-  
-  lazy var apodImageURL: URL = {
-    return self.apodDirectoryURL.appendingPathComponent("apodImage.png")
-  }()
-  
   // MARK: - Private Properties
   
   private let fileManager: FileManager
@@ -38,7 +32,7 @@ class APODFileManager {
     self.fileManager = fileManager
   }
   
-  // MARK: - Functions
+  // MARK: - Methods
   
   func createAPODDirectory() {
     do {
@@ -48,23 +42,44 @@ class APODFileManager {
     }
   }
   
-  func removeAPODFile() {
+  func removeFilesFromAPODDirectory() {
     do {
-      try fileManager.removeItem(at: apodImageURL)
+      let directoryContents = try fileManager.contentsOfDirectory(atPath: apodDirectoryURL.path)
+      for content in directoryContents {
+        let contentPath = apodDirectoryURL.appendingPathComponent(content)
+        removeFile(at: contentPath)
+      }
     } catch {
-      NSLog("Failed to remove image: \(error)")
+      print("Could not remove files from APOD Directory: \(error)")
     }
   }
   
-  func saveAPODImage(_ image: NSImage) throws {
-    guard let tiffData = image.tiffRepresentation else { throw FileError.couldNotParseImage }
+  func saveAPODImage(_ apod: APOD) throws {
+    guard let tiffData = apod.image.tiffRepresentation else { throw FileError.couldNotParseImage }
+    let apodPath = path(for: apod)
     let imageRep = NSBitmapImageRep(data: tiffData)
     guard let imageData = imageRep?.representation(using: .PNG, properties: [:]) else { throw FileError.couldNotParseImage }
-    try imageData.write(to: apodImageURL)
+    try imageData.write(to: apodPath)
   }
   
-  func updateDesktopImageWithSavedAPOD() throws {
+  func updateDesktopImage(from savedAPOD: APOD) throws {
+    let apodPath = path(for: savedAPOD)
     guard let mainScreen = NSScreen.screens()?.first else { throw FileError.couldNotFindMainScreen }
-    try NSWorkspace.shared().setDesktopImageURL(apodImageURL, for: mainScreen, options: [:])
+    try NSWorkspace.shared().setDesktopImageURL(apodPath, for: mainScreen, options: [:])
+  }
+  
+  // MARK: - Private Methods
+  
+  private func removeFile(at path: URL) {
+    do {
+      try fileManager.removeItem(at: path)
+    } catch {
+      print("Could not remove file at path: \(path)")
+      print("Error: \(error)")
+    }
+  }
+  
+  private func path(for apod: APOD) -> URL {
+    return apodDirectoryURL.appendingPathComponent("apodImage\(apod.title).png")
   }
 }

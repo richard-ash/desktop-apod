@@ -16,6 +16,7 @@ class APIClient {
   
   enum APIError: Error {
     case noImage
+    case noTitle
     case cannontParseHTML
     case cannotFindApodURL
     case other(String)
@@ -46,13 +47,14 @@ class APIClient {
     task.resume()
   }
   
-  func getAPODImageURL() -> Result<URL> {
+  func getAPODData() -> Result<APODData> {
     let base = "https://apod.nasa.gov/apod/"
     guard let url = URL(string: base) else { return .failure(APIError.cannotFindApodURL) }
     guard let htmlString = try? String(contentsOf: url) else { return .failure(APIError.cannontParseHTML) }
     guard let doc = HTML(html: htmlString, encoding: .utf8) else { return .failure(APIError.cannontParseHTML) }
     guard let partialImageURL = doc.css("a, center").flatMap({ $0["href"] }).filter({ $0.contains("image") }).first else { return .failure(APIError.noImage) }
+    guard let title = doc.css("b, center")[2].text?.replacingOccurrences(of: " ", with: "").lowercased() else { return .failure(APIError.noTitle) }
     guard let imageURL = URL(string: base + partialImageURL) else { return .failure(APIError.cannontParseHTML) }
-    return .success(imageURL)
+    return .success(APODData(imageURL: imageURL, title: title))
   }
 }

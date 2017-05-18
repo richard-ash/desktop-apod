@@ -14,6 +14,7 @@ class APOD: NSObject {
   // MARK: - Static Properties
   
   fileprivate static let Keys = (
+    title: "apodTitle",
     apodImage: "apodImage",
     lastRefresh: "lastRefresh"
   )
@@ -22,6 +23,7 @@ class APOD: NSObject {
   
   // MARK: - Properties
   
+  let title: String
   let image: NSImage
   let lastRefresh: Date
   
@@ -34,16 +36,18 @@ class APOD: NSObject {
   
   // MARK: - Initialization
   
-  init(image: NSImage, date: Date) {
+  init(title: String, image: NSImage, date: Date) {
+    self.title = title
     self.image = image
     self.lastRefresh = date
   }
   
   required convenience init?(coder aDecoder: NSCoder) {
+    guard let title = aDecoder.decodeObject(forKey: APOD.Keys.title) as? String else { return nil }
     guard let image = aDecoder.decodeObject(forKey: APOD.Keys.apodImage) as? NSImage else { return nil }
     guard let lastRefresh = aDecoder.decodeObject(forKey: APOD.Keys.lastRefresh) as? Date else { return nil }
     
-    self.init(image: image, date: lastRefresh)
+    self.init(title: title, image: image, date: lastRefresh)
   }
   
   // MARK: - Static Methods
@@ -62,6 +66,7 @@ class APOD: NSObject {
 
 extension APOD: NSCoding {
   func encode(with aCoder: NSCoder) {
+    aCoder.encode(title, forKey: APOD.Keys.title)
     aCoder.encode(image, forKey: APOD.Keys.apodImage)
     aCoder.encode(lastRefresh, forKey: APOD.Keys.lastRefresh)
   }
