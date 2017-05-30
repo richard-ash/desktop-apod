@@ -10,4 +10,4 @@ Desktop APOD is a Mac App that will fetch the most recent Astronomy Picture of t
 
 ## Download
 
-[Download the dmg here!](assets/DesktopAPOD.dmg)
+[Download the dmg here!](https://github.com/rwash8347/desktop-apod/raw/master/releases/DesktopAPOD.zip)
